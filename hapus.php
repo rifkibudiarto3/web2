@@ -1,7 +1,7 @@
 <?php
 include 'connection.php';
 
-    $query_hapus = "DELETE FROM mahasiswa WHERE id = '$_GET[id]'";
+    $query_hapus = "DELETE FROM datasurat WHERE id = '$_GET[id]'";
     $hapus = pg_query($connection, $query_hapus);
 
     if($hapus){
