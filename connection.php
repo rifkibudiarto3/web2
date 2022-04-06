@@ -1,10 +1,10 @@
 <?php
 
-$hostDB = '127.0.0.1';
+$hostDB = 'batyr.db.elephantsql.com';
 $portDB = '5432';
-$nameDB = 'mahasiswa';
-$userDB = 'postgres';
-$pwDB = '12345';
+$nameDB = 'utnnqjjn';
+$userDB = 'utnnqjjn';
+$pwDB = 'gUUmYRJ3g2x35IWw68fESQjeBWowWi8Y';
 
 $connection = pg_connect("host=$hostDB port=$portDB dbname=$nameDB user=$userDB password=$pwDB");
 
