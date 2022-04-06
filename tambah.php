@@ -11,21 +11,16 @@
             <div class="card-body shadow" style="margin:auto;" >
                 <h3 class="text-center"><b>Tambah Data</b></h3>
             <div class="form-group">
-                <label for="nim">NIM</label>
-                <input type="text" class="form-control" id="nim"  name="nim" placeholder="masukan nim" required>
+                <label for="no">Nomor Surat</label>
+                <input type="text" class="form-control" id="no"  name="no" placeholder="masukan nomor" required>
             </div>
             <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" placeholder="masukan nama" required>
+                <label for="tgl">Tanggal Surat</label>
+                <input type="text" class="form-control" id="tgl" name="tgl" placeholder="masukan tanggal" required>
             </div>
             <div class="form-group">
-                <label for="prodi">Prodi</label>
-                <select class="form-control" name="prodi" id="prodi" required>
-                    <option value="TI">TI</option>
-                    <option value="Hotel">Hotel</option>
-                    <option value="Elektro">Elektro</option>
-                    <option value="Komputer">Komputer</option>
-                </select>
+                <label for="pengirim">pengirim</label>
+                <input type="text" class="form-control" id="pengirim" name="pengirim" placeholder="masukan pengirim" required>
             </div>
             <div class="form-group">
             <button type="button" class="btn btn-danger mt-3" onclick="history.back()">Batal</button>
@@ -39,4 +34,4 @@
         </div>
     </div>
 </body>
-</html>
+</html
