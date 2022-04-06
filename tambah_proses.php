@@ -1,11 +1,11 @@
 <?php
     include 'connection.php';
 
-    $nim = $_POST['nim'];
-    $nama = $_POST['nama'];
-    $prodi = $_POST['prodi'];
+    $no = $_POST['no'];
+    $tgl = $_POST['tgl'];
+    $pengirim = $_POST['pengirim'];
 
-    $query_tambah = "INSERT INTO mahasiswa (nim,nama,prodi) VALUES ('$nim','$nama','$prodi')";
+    $query_tambah = "INSERT INTO datasurat (nomor_surat,tanggal_surat,pengirim) VALUES ('$no','$tgl','$pengirim')";
     $tambah = pg_query($connection,$query_tambah);
 
     if($tambah){
