@@ -1,7 +1,7 @@
 <?php
 
     include 'connection.php';
-    $tampil = pg_query("SELECT * FROM mahasiswa");
+    $tampil = pg_query("SELECT * FROM datasurat");
 
 ?>
 <!DOCTYPE html>
@@ -19,11 +19,9 @@
                 <table class="table table-hover table-success">
                     <thead>
                         <tr>
-                            <td>No</td>
-                            <td>NIM</td>
-                            <td>Nama</td>
-                            <td>Prodi</td>
-                            <td>Aksi</td>
+                            <td>Nomor Surat</td>
+                            <td>Tanggal Surat</td>
+                            <td>Pengirim</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -33,9 +31,9 @@
                         ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $data['nim'];?></td>
-                            <td><?= $data['nama'];?></td>
-                            <td><?= $data['prodi'];?></td>
+                            <td><?= $data['nomor_surat'];?></td>
+                            <td><?= $data['tanggal_surat'];?></td>
+                            <td><?= $data['pengirim'];?></td>
                             <td>
                                 <a href="edit.php?id=<?= $data['id']; ?>" class="btn btn-warning">Edit</a>
                                 <a href="hapus.php?id=<?= $data['id']; ?>" class="btn btn-danger">Hapus</a>
