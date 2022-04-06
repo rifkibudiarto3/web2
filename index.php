@@ -22,6 +22,7 @@
                             <td>Nomor Surat</td>
                             <td>Tanggal Surat</td>
                             <td>Pengirim</td>
+                             <td>Aksi</td>
                         </tr>
                     </thead>
                     <tbody>
