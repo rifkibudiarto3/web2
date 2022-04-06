@@ -38,13 +38,7 @@
             </div>
             <div class="form-group">
                 <label for="prodi">Prodi</label>
-                <select class="form-control" name="prodi" id="prodi">
-                    <option value="<?php echo $prodi; ?>"><?php echo $prodi; ?></option>
-                    <option value="TI">TI</option>
-                    <option value="Hotel">Hotel</option>
-                    <option value="Elektro">Elektro</option>
-                    <option value="Komputer">Komputer</option>
-                </select>
+                <input type="text" class="form-control" name="nama" id="nama" placeholder="masukan nama"value ="<?php echo $nama; ?>" required>
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-danger mt-3" onclick="history.back()">Batal</button>
