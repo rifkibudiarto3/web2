@@ -1,12 +1,11 @@
 <?php
 
     include('connection.php');
-        $id = $_POST['id'];
-        $nim = $_POST['nim'];
-        $nama = $_POST['nama'];
-        $prodi = $_POST['prodi']; 
+        $no = $_POST['no'];
+        $tgl = $_POST['tgl'];
+        $pengirim = $_POST['pengirim']; 
 
-        $query_edit = "UPDATE mahasiswa SET nim='$nim', nama='$nama', prodi='$prodi' WHERE id = '$id' ";
+        $query_edit = "UPDATE datasurat SET no='$no', tgl='$tgl', pengirim='$pengirim' WHERE id = '$id' ";
         $edit = pg_query($connection,$query_edit);
 
         if($edit){
