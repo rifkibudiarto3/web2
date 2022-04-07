@@ -3,10 +3,9 @@
     $query = "SELECT * FROM mahasiswa WHERE id = '$_GET[id]'";
     $statement = pg_query($connection,$query);
     while($data= pg_fetch_array($statement)){
-        $id = $data['id'];
-        $nim = $data['nim'];
-        $nama = $data['nama'];
-        $prodi = $data['prodi'];
+        $no = $data['no'];
+        $tgl = $data['tgl'];
+        $pengirim = $data['pengirim'];
     }
 ?>
 <!DOCTYPE html>
@@ -29,16 +28,16 @@
                 <input type="hidden" class="form-control" id ="id" name ="id" value ="<?php echo $id; ?>" required>
             </div>
             <div class="form-group">
-                <label class="mt-2mb-2" for="nim">NIM</label>
-                <input type="text" class="form-control" name="nim" id="nim" value="<?php echo $nim;?>"  required>
+                <label class="mt-2mb-2" for="nim">NOMOR SURAT</label>
+                <input type="text" class="form-control" name="no" id="no" value="<?php echo $no;?>"  required>
             </div>
             <div class="form-group">
-                <label class="mt-5-mb-5" for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" id="nama" placeholder="masukan nama"value ="<?php echo $nama; ?>" required>
+                <label class="mt-5-mb-5" for="nama">TANGGAL SURAT</label>
+                <input type="date" class="form-control" name="tgl" id="tgl" placeholder="masukan nama"value ="<?php echo $tgl; ?>" required>
             </div>
             <div class="form-group">
-                <label for="prodi">Prodi</label>
-                <input type="text" class="form-control" name="nama" id="nama" placeholder="masukan nama"value ="<?php echo $nama; ?>" required>
+                <label for="prodi">PENGIRIM</label>
+                <input type="text" class="form-control" name="pengirim" id="pengirim" placeholder="masukan nama"value ="<?php echo $pengirim; ?>" required>
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-danger mt-3" onclick="history.back()">Batal</button>
