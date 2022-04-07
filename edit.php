@@ -3,6 +3,7 @@
     $query = "SELECT * FROM mahasiswa WHERE id = '$_GET[id]'";
     $statement = pg_query($connection,$query);
     while($data= pg_fetch_array($statement)){
+        $id = $id['id'];
         $no = $data['no'];
         $tgl = $data['tgl'];
         $pengirim = $data['pengirim'];
