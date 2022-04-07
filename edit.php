@@ -1,6 +1,6 @@
 <?php
     include 'connection.php';
-    $query = "SELECT * FROM mahasiswa WHERE id = '$_GET[id]'";
+    $query = "SELECT * FROM data_surat WHERE id = '$_GET[id]'";
     $statement = pg_query($connection,$query);
     while($data= pg_fetch_array($statement)){
         $id = $data['id'];
